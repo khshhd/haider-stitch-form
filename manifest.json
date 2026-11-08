@@ -1,0 +1,28 @@
+{
+  "id": "./",
+  "name": "خياطة ومطرزات حيدر الرماحي",
+  "short_name": "مطرزات حيدر",
+  "description": "استمارة طلبات مطرزات حيدر الرماحي",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8f6f0",
+  "theme_color": "#173b43",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

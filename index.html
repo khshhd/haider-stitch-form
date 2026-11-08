@@ -2,6 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#173b43">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="مطرزات حيدر">
+<link rel="manifest" href="manifest.json">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>استمارة مطرزات حيدر الرماحي</title>
 <style>
@@ -160,4 +164,15 @@ function calc(){
 document.getElementById('total').addEventListener('input',calc);
 document.getElementById('paid').addEventListener('input',calc);
 </script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('./sw.js').catch(function (err) {
+      console.log('Offline setup unavailable:', err);
+    });
+  });
+}
+</script>
+
 </body></html>
